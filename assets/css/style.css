@@ -1,0 +1,236 @@
+@import url(./all.min.css);
+@import url(./variable.css);
+@import url(./common.css);
+@import url(./register.css);
+::after,*,::before{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*##########################   header section     #####################*/
+.header{
+height: 4rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: var(--space-r-l-section-lg);
+box-shadow: var(--shadow-border-header);
+}
+
+.header .menu{
+    height: inherit;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header .logo{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu .links a{
+    margin-right: 1rem;
+    padding: 0 0.5rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.header .logo a{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.header .logo a span{
+   color: var(--secondary);
+}
+
+
+
+/*#########################   hero section    ################*/
+
+.hero{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: var(--space-r-l-section-lg);
+    /* background-color: brown; */
+
+}
+.hero .hero2 img{
+    height: 500px;
+
+}
+
+.hero1{
+    /* background-color: red; */
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.hero1 .hero1-text .title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+
+.hero1 .hero1-text .content{
+    font-size: 17px;
+}
+
+.hero .auth-btns{
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.hero .auth-btns .auth-btn{
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.social-auth .divider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.4rem 0;
+}
+
+.social-auth .divider::after,.social-auth .divider::before{
+    content: '';
+    width: 90rem;
+    height: 1px;
+    background-color: var(--primary);
+}
+
+
+
+
+
+/*##############    form     ########*/
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    background-color: var(--bg-primary);
+}
+
+.login .form{
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 1rem;
+}
+
+.login .form .input-group .auth-btns .auth-btn{
+    margin-left: 0;
+}
+
+
+.login .form .forget{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.login .form .forget a{
+    color: var(--primary);
+}
+
+.login .form .social-auth{
+    position: relative;
+}
+
+.login .form .social-auth .divider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.login .form .social-auth .divider::after,.login .form .social-auth .divider::before{
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: var(--primary);
+}
+
+.login .form .social-auth .auth-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .form .social-auth .auth-links .Facebook{
+    background-color: #4267B2;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.login .form .social-auth .auth-links .Google{
+    background-color: #DB4437;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.login .form .social-auth .auth-links a{
+    transition: all 0.4s ease-in-out;
+}
+
+.login .form .social-auth .auth-links a:hover{
+    box-shadow: 3px 3px 5px 6px var(--bg-primary);
+    transform: scale(1.03);
+}
+
+
+.form-group{
+    padding: 0.8rem;
+}
+
+
+/*#############   recent added items     #######*/
+
+.recent-items{
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow: hidden;
+    padding: var(--space-r-l-section-lg);
+}
